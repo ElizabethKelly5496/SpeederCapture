@@ -8,5 +8,7 @@ The program records the vehicle speed, direction, date, time, if the vehicle was
 These attributes are written to a .json file. 
 
 The camera uses the libcamera library and outputs the vehicle image in .jpg form. 
+
 Both the .json file and .jpg image are uploaded to a Google Cloud storage bucket for storage and additional processing (future add-on program). 
-This is accomplished with a simple Python3 program. 
+The upload is accomplished with a simple Python3 program. 
+The Python3 program references a .json file which contains the credentials for accessing the GCP project. The credentials .json file is not saved within this respository to ensure the GPC project credentials remain secret.  
