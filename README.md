@@ -1,6 +1,6 @@
 # SpeederCapture
 
-A simple Raspberry Pi project that measures the speed of a passing vehicle and captures a picture of the vehicle if it is exceeding to certain speed. 
+A simple Raspberry Pi project that measures the speed of a passing vehicle and captures a picture of the vehicle if it is exceeding a certain speed. 
 The project utilizes an OmniPreSense OPS243-C Single Board Radar Sensor, Raspberry Pi4, and Raspberry Pi Camera Module V2. 
 
 The primary program for reading the radar sensor data is written using C++. 
