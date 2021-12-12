@@ -97,7 +97,7 @@ int main() {
 
 
 				// call python program to upload image to cloud storage bucket
-				string image_string = "python3 UploadJSON.py " + filename + ".jpg 452imagefiles";
+				string image_string = "python3 UploadFile.py " + filename + ".jpg 452imagefiles";
 				const char *image_upload = image_string.c_str();
 				system(image_upload);
 
@@ -163,7 +163,7 @@ int main() {
 			}
 
 			// call python program to upload json to cloud storage bucket
-			string str_json_upload = "python3 UploadJSON.py " + filename + " 452files_unprocessed";
+			string str_json_upload = "python3 UploadFile.py " + filename + " 452files_unprocessed";
 			const char *json_upload = str_json_upload.c_str();
 			system(json_upload);
 
@@ -177,8 +177,9 @@ int main() {
 //============================================================================
 // References:
 //
-// How to read data from the RPi USB serial port
-// mbedded.ninja Blog		"Linux Serial Ports Using C/C++"
+// How to read data from the RPi USB serial port 
+// mbedded.ninja Blog		
+// "Linux Serial Ports Using C/C++"
 // https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/
 //
 //============================================================================
